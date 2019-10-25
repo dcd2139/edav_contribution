@@ -43,7 +43,7 @@
         <!-- Title slide -->
 				<section>
 					<h2>RStudio vs JupyterLab</h2>
-					<h4>For Exploratory Analysis and Visualization</h4>
+					<h4>For Exploratory Data Analysis and Visualization</h4>
 					<p>
 						<small>Dhananjay Deshpande</small>
 					</p>
@@ -56,11 +56,15 @@
 <!-- Overview -->
 				<section>
 					<h4>Many Tools Exist</h4>
+					<p></p>
 					<p class="fragment"><ul>
 							<li>RStudio</li>
-							<li>JupyterLab and Jupyter Notebook</li>
+							<li>Jupyter Notebook</li>
+							<li>JupyterLab</li>
 							<li>Tableau</li>
 							<li>Microsoft Excel</li>
+							<li>Matlab</li>
+							<li>...</li>
 					</ul></p>
 					<aside class="notes">
 					</aside>
@@ -144,6 +148,39 @@
 				</section>
 				</section>
 
+<!-- Languages Supported -->
+				<section>
+					<section>
+						<h3>Language Support</h3>
+					</section>
+					<section>
+						<h3>RStudio</h3>
+						<p>Best for R. knitr can execute code in many languages besides R. Some of the available language engines include:
+							<ul>
+								<li>Python</li>
+								<li>SQL</li>
+								<li>Bash</li>
+								<li>Rcpp</li>
+								<li>Stan</li>
+								<li>Javascript</li>
+								<li>CSS</li>
+							</ul>
+						</p>
+						<a href="https://rmarkdown.rstudio.com/lesson-5.html">reference</a>
+					</section>
+					<section>
+						<h3>JupyterLab</h3>
+						<p>The Jupyter system supports over 100 programming languages (called “kernels” in the Jupyter ecosystem) including
+							<ul>
+							<li>Python</li>
+							<li>Java</li>
+							<li>R</li>
+							<li>Julia</li>
+							<li>Matlab</li>
+							<li>Octave</li>
+						<a href="https://jupyter4edu.github.io/jupyter-edu-book/jupyter.html">reference</a>
+					</section>
+				</section>
 
 
 
@@ -157,17 +194,17 @@
                 <ul>
 							    <li>Copy file1 to file1.bak</li>
                 </ul>
-              </li>	
+              </li>
 							<li>CVS / SVN:
                 <ul>
 							    <li>Centralised storage with revision history</li>
                 </ul>
-              </li>	
+              </li>
 							<li>Git:
                 <ul>
 							    <li>Distributed system</li>
                 </ul>
-              </li>	
+              </li>
 					</ul></p>
 				</section>
 
@@ -220,7 +257,7 @@
               </ul>
 					</ul></p>
 				</section>
-  
+
 				<section>
 					<h3>Exercise: Initialise a new project in git</h3>
 					<p><ul>
@@ -231,7 +268,7 @@
 $ mkdir myproject
 $ cd myproject
 
-$ git init  
+$ git init
   Initialized empty Git repository in /home/myname/projects/myproject
 
 $ ls -la
@@ -265,7 +302,7 @@ $ ls -la
 					<p><ul>
 							<li>Use <b>git config -l</b> to see if you've already set your name and email address</li>
 							<li>If you need to set them, use</li>
-           </ul>   
+           </ul>
            <pre><code>
 $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
@@ -280,7 +317,7 @@ $ git config --global user.email you@example.com
 						<li>It also often gives hints about how to proceed or undo steps</li>
 					</ul>
           <pre><code>
-$ git init  
+$ git init
   Initialized empty Git repository in /home/myname/projects/myproject
 
 $ git status
@@ -320,7 +357,7 @@ $ git help add
 							<li><b>git add .</b> to add everything</li>
 					</ul></p>
 				</section>
- 
+
 				<section>
 					<h3>Exercise: Add files to the project</h3>
 					<p><ul>
@@ -354,7 +391,7 @@ $ git status
 							<li><b>git commit -m <i>"commit message"</i></b> to do both steps at once</li>
 					</ul></p>
 				</section>
- 
+
 				<section>
 					<h3>Exercise: Commit the changes to your local repo</h3>
 					<p><ul>
@@ -413,7 +450,7 @@ index 0000000..907b308
 							<li>We can use both the reference number and the HEAD notation to refer to previous commits</li>
 					</ul></p>
           <p><pre><code>
-$ git log 
+$ git log
 commit 320a8f00a4a0de7c9b3f39851d3bc164d0769697
 Author: myname myname@ak-rl.example.com
 Date:   Mon Apr 4 12:52:23 2016 +0200
@@ -429,7 +466,7 @@ Date:   Mon Apr 4 12:52:23 2016 +0200
 							<li><b>git commit --amend</b> lets you change it </li>
 					</ul></p>
 				</section>
- 
+
 				<section>
 					<h3>Exercise: Edit your most recent commit</h3>
 					<p><ul>
@@ -579,7 +616,7 @@ $ git stash list
 							<li>Within the Gitlab UI, make a new project</li>
 							<li>Name your project, leave it as private</li>
 							<li>Notice that it tells you how to proceed!</li>
-  
+
 							<li>Within your local repository, tell git where the remote is:</li></ul>
                 <pre><code>
 $ git remote add origin git@gitlab.example.com:myname/myprojectname.git
@@ -705,7 +742,7 @@ origin  git@gitlab.example.com:anna/testrepository.git (push)
 					<p><img width="650" src="img/gitflow.png" alt="gitlab"></p>
 					</ul></p>
 				</section>
-	
+
 				<section>
 					<h3>Working collaboratively</h3>
 					<p><ul>
@@ -716,7 +753,7 @@ origin  git@gitlab.example.com:anna/testrepository.git (push)
 						<li>Let's take a pragmatic look at two common issues</li>
 					</ul></p>
 				</section>
-	
+
 				<section>
 					<h3>Troubleshooting 1: the push is rejected</h3>
 					<p>
@@ -726,7 +763,7 @@ $ git push
 To git@gitlab.example.com:myname/myproject.git
  ! [rejected]        master -> master (fetch first)
 error: failed to push some refs to 'git@gitlab.example.com:myname/testrepository.git'
-hint: Updates were rejected because the remote contains work that you do not have locally. 
+hint: Updates were rejected because the remote contains work that you do not have locally.
             </code></pre>
             <ul><li>Then you're trying to push before you've updated your local repo with remote changes.</li>
                 <li>Fix this by doing a <b>git pull</b> first</li>
@@ -1087,7 +1124,7 @@ $ git push
            </ul>
            </p>
 				</section>
-  
+
 
 				<section>
 					<h3>Investigative tools</h3>
@@ -1102,14 +1139,14 @@ $ git push
 $ git log --graph
 * commit f91ed8cabfd053cde63f168087885bfdd0358419
 |     Updated readme
-|    
+|
 *   commit b8775a17e6fa9c9b6a9dd9f7b323a280a4db8faf
 |\  Merge: 9544040 e99a3ac
 | |     Merge branch 'master' of gitlab.example.com:myname/myproject
-| |   
+| |
 | * commit e99a3ac35a86c9bce4c8993ed8b6f1b7c8bf2a39
 | |     Allow user login
-| |   
+| |
 * | commit 9544040efc0537d2f5a10975c0b779c3ccad0142
 |/      Add remote users
 |
@@ -1210,7 +1247,7 @@ $ git log --graph
 				  	</ul></p>
 				</section>
 
-				<section>	
+				<section>
 					<p><img width="750" src="img/merge_rebase.png" alt="merge_rebase"></p>
 				</section>
 
@@ -1227,7 +1264,7 @@ $ git log --graph
 				  	</ul></p>
 				</section>
 
-				<section>	
+				<section>
 					<p><img width="750" src="img/fastforward.png" alt="fastforward"></p>
 				</section>
 
@@ -1265,7 +1302,7 @@ $ git log --graph
 $ git rebase -i HEAD~3
 
 pick 6c169da Fixed bug #234
-pick 78413bb Typo in user prefs 
+pick 78413bb Typo in user prefs
 pick 2bc4f9b Allow users to update their preferences
 
 # Rebase 28972f7..2bc4f9b onto :w28972f7
@@ -1293,7 +1330,7 @@ pick 2bc4f9b Allow users to update their preferences
 $ git rebase -i HEAD~3
 
 reword 6c169da Fixed bug #234
-pick 78413bb Typo in user prefs 
+pick 78413bb Typo in user prefs
 pick 2bc4f9b Allow users to update their preferences
             </code></pre>
              <pre><code>
@@ -1318,7 +1355,7 @@ commit 6c169da
 $ git rebase -i HEAD~3
 
 pick 6c169da Fixed bug #234: do not allow remote access to db
-squash 78413bb Typo in user prefs 
+squash 78413bb Typo in user prefs
 pick 2bc4f9b Allow users to update their preferences
             </code></pre>
              <pre><code>
@@ -1410,4 +1447,3 @@ commit 2bc4f9b
 
 	</body>
 </html>
-
