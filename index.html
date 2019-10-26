@@ -201,81 +201,114 @@
 						</section>
 					</section>
 
-
-
+					<!-- Installation -->
 					<section>
-						<h3>Exercise: Initialise a new project in git</h3>
-						<p><ul>
-							<li>Make a new directory and move into it</li>
-							<li>Initialise the directory as a git repository</li>
-						</ul>
-						<pre><code>
-							$ mkdir myproject
-							$ cd myproject
+						<section>
+							<h3>Installation</h3>
+						</section>
+						<section>
+							<h3>RStudio</h3>
+							<p>To Install RStudio
+								<ul>
+									<li>Go to www.rstudio.com and click on the "Download RStudio" button.</li>
+									<li>Click on "Download RStudio Desktop."</li>
+									<li>Click on the version recommended for your system, or the latest Mac version, save the .dmg file on your computer, double-click it to open, and then drag and drop it to your applications folder.</li>
+								</ul>
+							</p>
 
-							$ git init
-							Initialized empty Git repository in /home/myname/projects/myproject
+						</section>
+						<section>
+							<h3>JupyterLab</h3>
+							<p><pre><code>
+								With conda
+								$ conda install -c conda-forge jupyterlab
 
-							$ ls -la
-							drwxr-xr-x 4096 Apr  5 09:54 .
-							drwxr-xr-x 4096 Apr  4 12:40 ..
-							drwxr-xr-x 4096 Apr  5 08:13 .git
-						</code></pre>
-					</p>
-				</section>
+								With pip
+								$ pip install jupyterlab
 
-				<!-- Summary -->
-				<section>
-					<h1>Summary</h1>
-					<p class="fragment"><ul>
-						<li>Version control</li>
-						<li>Git concepts</li>
-						<li>Using git locally</li>
-						<li>Using git with a remote</li>
-						<li>Undoing mistakes</li>
-						<li>Branches</li>
-						<li>Caring for your commit history</li>
-					</ul></p>
-					<aside class="notes">
-					</aside>
-				</section>
+								Run JupyterLab
+								$ jupyter lab
 
+							</code></pre></p>
+						</section>
+					</section>
 
+					<!-- Demo -->
+					<section>
+						<section>
+							<h3>Demo</h3>
+						</section>
+						<section>
+							<h3>RStudio</h3>
+						</section>
+						<section>
+							<h3>JupyterLab</h3>
+						</section>
+					</section>
+
+					<!-- Feature Comparison -->
+					<section>
+						<section>
+							<h3>Feature Comparison</h3>
+						</section>
+						<section>
+							<h3>RStudio</h3>
+						</section>
+					</section>
+
+					<!-- Summary -->
+					<section>
+						<h1>Summary</h1>
+						<p class="fragment"><ul>
+							<li>Both RStudio and JupyterLab provide rich set of features</li>
+							<li></li>
+						</ul></p>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<!-- End -->
+					<section>
+						<h1>Thank you</h1>
+						<aside class="notes">
+						</aside>
+					</section>
+
+				</div>
 			</div>
-		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+			<script src="lib/js/head.min.js"></script>
+			<script src="js/reveal.min.js"></script>
 
-		<script>
+			<script>
 
-		// Full list of configuration options available here:
-		// https://github.com/hakimel/reveal.js#configuration
-		Reveal.initialize({
-			controls: true,
-			progress: true,
-			history: true,
-			center: true,
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
 
-			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-			// Parallax scrolling
-			// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-			// parallaxBackgroundSize: '2100px 900px',
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
 
-			// Optional libraries used to extend on reveal.js
-			dependencies: [
-				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-			]
-		});
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
 
-	</script>
+			</script>
 
-</body>
-</html>
+		</body>
+		</html>
