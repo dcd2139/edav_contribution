@@ -52,7 +52,6 @@
 				</aside>
 			</section>
 
-
 			<!-- Overview -->
 			<section>
 				<h4>Many EDAV Tools Exist</h4>
@@ -72,16 +71,23 @@
 
 			<!-- Question -->
 			<section>
-				<p><b>Which IDE should I choose as a Data Scientist?</b></p>
-				<p>Lets focus on a couple of most popular tools</p>
+				<section>
+				<p><b>What Tools should I choose as a Data Scientist?</b></p>
+				</section>
+				<section>
+				<p>Hard question.</p>
+				</section>
+				<section>
+				<p>Lets compare a couple of popular Integrated Development Environments</p>
+				</section>
 				<aside class="notes">
 				</aside>
 			</section>
 
-			<!-- Introduction -->
+			<!-- Tools of Interest -->
 			<section>
 				<section>
-					<h3>Introduction</h3>
+					<h3>Tools of Interest</h3>
 				</section>
 				<section>
 					<h3>RStudio</h3>
@@ -254,11 +260,10 @@ $ jupyter lab
 						</section>
 					</section>
 
-					<!-- Feature Comparison -->
+					<!-- Feature Comparison - Code Development -->
 					<section>
 						<section>
-							<h3>Feature Comparison</h3>
-							<h1>Code Editor</h1>
+							<h3>Development</h3>
 						</section>
 						<section>
 							<table style="width:100%">
@@ -267,9 +272,9 @@ $ jupyter lab
 						    <th>RStudio</th>
 						    <th>JupyterLab</th>
 						  </tr>
-						  <tr>
-						    <td>Themes</td>
-						    <td>Yes</td>
+							<tr>
+						    <td>Seperation between text and code</td>
+						    <td>No</td>
 						    <td>Yes</td>
 						  </tr>
 						  <tr>
@@ -277,23 +282,167 @@ $ jupyter lab
 						    <td>Supported</td>
 						    <td>Supported (Large Number of Languages)</td>
 						  </tr>
+							<tr>
+						    <td>Function help</td>
+						    <td>Yes</td>
+						    <td>Possible with Extensions</td>
+						  </tr>
+							<tr>
+						    <td>Debugging</td>
+						    <td>Supported (out of the box)</td>
+						    <td>Supported</td>
+						  </tr>
+							<tr>
+						    <td>Documentation and Help</td>
+						    <td>Available</td>
+						    <td>Available</td>
+						  </tr>
+							<tr>
+								<td>Support for Extensions</td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Themes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
 						</table>
 						</section>
 					</section>
 
-					<!-- Summary -->
+					<!-- Feature Comparison - Data Cleaning-->
 					<section>
 						<section>
-							<h3>Feature Comparison</h3>
-							<h1>Code Editor</h1>
+							<h3>Data Cleaning</h3>
 						</section>
 						<section>
-						<h1>Summary and Recommendations</h1>
+							<table style="width:100%">
+						  <tr>
+						    <th>Feature</th>
+						    <th>RStudio</th>
+						    <th>JupyterLab</th>
+						  </tr>
+							<tr>
+						    <th>File Explorer</th>
+						    <th>Yes</th>
+						    <th>Yes</th>
+						  </tr>
+							<tr>
+						    <th>File formats supported</th>
+						    <th>csv, xls, xlsx, sav, dta, por, sas, stata</th>
+						    <th>csv, json</th>
+						  </tr>
+							<tr>
+						    <th>Pagination for Data Frames</th>
+						    <th>Yes</th>
+						    <th>No</th>
+						  </tr>
+						</table>
+						</section>
+					</section>
+
+					<!-- Feature Comparison - Analysis and Exploration-->
+					<section>
+						<section>
+							<h3>Analysis and Exploration</h3>
+						</section>
+						<section>
+							<table style="width:100%">
+						  <tr>
+						    <th>Feature</th>
+						    <th>RStudio</th>
+						    <th>JupyterLab</th>
+						  </tr>
+							<tr>
+						    <th>Notebook support</th>
+						    <th>Yes</th>
+						    <th>Yes</th>
+						  </tr>
+						</table>
+						</section>
+					</section>
+
+					<!-- Feature Comparison - Modeling and Prediction-->
+					<section>
+						<section>
+							<h3>Modeling and Prediction</h3>
+						</section>
+						<section>
+							<table style="width:100%">
+						  <tr>
+						    <th>Feature</th>
+						    <th>RStudio</th>
+						    <th>JupyterLab</th>
+						  </tr>
+							<tr>
+						    <th>Integration with Tensorflow</th>
+						    <th>Yes</th>
+						    <th>Yes</th>
+						  </tr>
+						</table>
+						</section>
+					</section>
+
+					<!-- Feature Comparison - Presentation-->
+					<section>
+						<section>
+							<h3>Presentation</h3>
+						</section>
+						<section>
+							<table style="width:100%">
+						  <tr>
+						    <th>Feature</th>
+						    <th>RStudio</th>
+						    <th>JupyterLab</th>
+						  </tr>
+							<tr>
+						    <th>Export formats</th>
+						    <th>html, pdf, md, word (with knitr)</th>
+						    <th>html, pdf, md, json</th>
+						  </tr>
+						</table>
+						</section>
+					</section>
+
+					<!-- Feature Comparison - Collaboration-->
+					<section>
+						<section>
+							<h3>Collaboration</h3>
+						</section>
+						<section>
+							<table style="width:100%">
+						  <tr>
+						    <th>Feature</th>
+						    <th>RStudio</th>
+						    <th>JupyterLab</th>
+						  </tr>
+							<tr>
+						    <th>Integration with Git</th>
+						    <th>Yes (out of the box)</th>
+						    <th>Yes (with Extensions)</th>
+						  </tr>
+							<tr>
+						    <th>Native Git client</th>
+						    <th>Yes</th>
+						    <th>No</th>
+						  </tr>
+						</table>
+						</section>
+					</section>
+
+				<!-- Summary -->
+					<section>
+						<section>
+							<h3><h1>Summary and Recommendations</h1></h3>
+						</section>
+						<section>
 						<p class="fragment"><ul>
 							<li>RStudio is a more mature product than JupyterLab</li>
+							<li>RStudio has multiple features out of the box</li>
 							<li>JupyterLab adds a lot more capabilities to Jupyter Notebook</li>
-							<li>Recommend using RStudio for R and JupyterLab for Python</li>
-							<li>JupyterLab could eventually be the only tool I need to use for EDAV</li>
+							<li>JupyterLab could eventually be the only tool needed for EDAV</li>
+							<li>Recommend using RStudio for R and JupyterLab for Python (for now)</li>
 						</ul></p>
 						<aside class="notes">
 						</aside>
@@ -302,7 +451,7 @@ $ jupyter lab
 
 					<!-- End -->
 					<section>
-						<h1>Thank you</h1>
+						<h3>Thank you</h3>
 						<aside class="notes">
 						</aside>
 					</section>
